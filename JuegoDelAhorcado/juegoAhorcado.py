@@ -110,13 +110,13 @@ if __name__ == "__main__":
             opc = ''
 
             while not(opc == 'NO'):
-                opc = input("Desea agregar otra palabra--SI o NO: ").upper()
+                opc = input("Desea agregar otra palabra--(SI o NO): ").upper()
                 if opc == 'SI':
                     p.append(input("Escriba una palabra: "))
                 elif opc == 'NO':
                     os.system('cls')
                     print(f"Palabras Guardadas: {p}")
-                    print(f"Cantida de palabra Guarada en el juego: {len(LeerArchivo())+len(p)}")
+                    print(f"Cantidad de palabras Guardadas en el juego: {len(LeerArchivo())+len(p)}")
                 else:
                     print("\tERROR")
                 
